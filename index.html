@@ -39,6 +39,38 @@
     box-sizing:border-box;
     border-bottom:1px solid #222;
   }
+    /* Literatura */
+.lit-grid {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.lit-card {
+  background: linear-gradient(135deg, #1a1a1a, #111);
+  border: 1px solid #333;
+  border-radius: 18px;
+  padding: 32px 20px;
+  text-align: center;
+  transition: all .2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.lit-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  border-color: #666;
+  background: linear-gradient(135deg, #222, #111);
+}
+
+.lit-icon {
+  font-size: 40px;
+}
+
+.lit-card h3 {
+  margin: 0;
+  font-size: 17px;
+}
+
 </style>
 </head>
 <body>
@@ -111,6 +143,37 @@
   </div>
 </section>
   
+  <!-- LITERATURA -->
+<section class="section" id="literatura">
+  <h2>Literatura</h2>
+  <p>Apuntes en PDF de los principales movimientos y autores.</p>
+
+  <div class="grid lit-grid">
+
+    <a class="lit-card" href="assets/Modernismo.pdf" target="_blank">
+      <div class="lit-icon">📘</div>
+      <h3>Modernismo</h3>
+    </a>
+
+    <a class="lit-card" href="assets/Novecentismo y Generación del 14.pdf" target="_blank">
+      <div class="lit-icon">📗</div>
+      <h3>Novecentismo y Generación del 14</h3>
+    </a>
+
+    <a class="lit-card" href="assets/Antonio Manchado y Juan Ramón Jiménez.pdf" target="_blank">
+      <div class="lit-icon">📕</div>
+      <h3>Machado y Juan Ramón Jiménez</h3>
+    </a>
+
+    <a class="lit-card" href="assets/Epígrafes.pdf" target="_blank">
+      <div class="lit-icon">📙</div>
+      <h3>Epígrafes</h3>
+    </a>
+
+  </div>
+</section>
+
+  
   <!-- SOBRE MÍ -->
   <section class="section" id="sobre-mi">
     <h2>Sobre mí</h2>
@@ -121,6 +184,7 @@
 
 </body>
 </html>
+
 
 
 
